@@ -131,3 +131,14 @@ def marinate(package, package_type, alphabet):
 
 def string(list_):
     return "".join(list_)
+
+def main():
+    key = input()
+    cipher = encrypt(input(), key, 20, False)
+    print(cipher)
+    cipher = input()
+    plain = decrypt(cipher, key, 20, False)
+    print(plain)
+
+if __name__ == "__main__":
+    main()
